@@ -1,5 +1,4 @@
 
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -44,8 +43,13 @@
 </head>
 <body>
 
-  <form action="send_email.php" method="POST" enctype="multipart/form-data">
+  <form action="https://formsubmit.co/nithinsinghrajpurohit@gmail.com" method="POST" enctype="multipart/form-data">
     <h2>Fill Your Details</h2>
+
+    <!-- Formsubmit settings -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_subject" value="New Form Submission">
 
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" required>
@@ -54,12 +58,12 @@
     <input type="number" id="age" name="age" required>
 
     <label for="language">Language:</label>
-<select id="language" name="language" required>
-  <option value="">--Select Language--</option>
-  <option value="Hindi">Hindi</option>
-  <option value="Telugu">Telugu</option>
-  <option value="English">English</option>
-</select>
+    <select id="language" name="language" required>
+      <option value="">--Select Language--</option>
+      <option value="Hindi">Hindi</option>
+      <option value="Telugu">Telugu</option>
+      <option value="English">English</option>
+    </select>
 
     <label for="college">College Name:</label>
     <input type="text" id="college" name="college" required>
